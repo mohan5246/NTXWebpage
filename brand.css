@@ -1,0 +1,46 @@
+/* Supplied NTX banner — kept full-width so the complete original branding is visible. */
+.brand-banner {
+  padding: 52px clamp(16px, 4vw, 62px);
+  background: #fff;
+}
+
+.brand-banner img {
+  display: block;
+  width: 100%;
+  max-width: 1536px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 18px 45px #031d4b1a;
+}
+
+.brand-banner + .intro { padding-top: 78px; }
+
+@media (max-width: 650px) {
+  .brand-banner { padding: 26px 12px; }
+  .brand-banner + .intro { padding-top: 58px; }
+}
+
+/* Logo treatment: source image is intentionally preserved as the brand asset. */
+.brand { gap: 0; }
+.brand-logo { display: block; width: 190px; height: 70px; object-fit: contain; border-radius: 8px; }
+.footer-brand .brand-logo { width: 116px; height: 56px; border-radius: 7px; }
+
+/* Respect the appearance selected at OS level. */
+@media (prefers-color-scheme: dark) {
+  .intro, .statement { background: #071a3b; color: #f4f7fc; }
+  .intro h2, .statement h2 { color: #f4f7fc; }
+  .intro-row > p, .metrics p, .signature { color: #b6c7df; }
+  .metrics { border-color: #345171; }
+  .metrics > div + div { border-color: #345171; }
+  .metrics strong { color: #fff; }
+  .contact { background: linear-gradient(115deg, #0a2757, #071a3b 55%, #30200e); }
+  .contact .eyebrow { color: #bbcae0; }
+  .contact h2 { color: #fff; }
+  footer { background: #071a3b; color: #b6c7df; }
+  footer a { color: #fff; }
+}
+
+@media (max-width: 650px) {
+  .brand-logo { width: 145px; height: 57px; border-radius: 7px; }
+  .footer-brand .brand-logo { width: 108px; height: 52px; }
+}
