@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="brand.css" />
+  <link rel="stylesheet" href="interactive.css" />
 </head>
 <body>
 
@@ -43,7 +44,7 @@
 
       <div class="hero-content">
         <p class="eyebrow"><span></span> NITHIYAA TECHNOLOGIES NTX</p>
-        <h1>Turning ideas<br />into <span>impact.</span></h1>
+        <h1 aria-label="Turning ideas into impact.">Turning ideas<br />into <span>impact.</span></h1>
         <p class="hero-intro">Innovative solutions for individuals, businesses and a smarter future.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#contact">Start a conversation <span>↗</span></a>
@@ -153,6 +154,22 @@
           <a href="#training" aria-label="Learn more about Mentoring and Career Guidance at NTX">Discover more <b>→</b></a>
         </article>
       </div>
+    </section>
+
+    <section class="automate" id="automate">
+      <p class="eyebrow dark"><span></span> WHAT CAN NTX AUTOMATE?</p>
+      <h2>Pick a problem.<br /><em>See it automated.</em></h2>
+      <p class="automate-lead">Choose what slows your business down and see how NTX could solve it with an AI agent, automation and software.</p>
+      <div class="automate-options" role="group" aria-label="Choose a business problem">
+        <button type="button" data-problem="booking" aria-pressed="false">📅 Appointment Booking</button>
+        <button type="button" data-problem="calls" aria-pressed="false">📞 Customer Calls</button>
+        <button type="button" data-problem="support" aria-pressed="false">💬 Customer Support</button>
+        <button type="button" data-problem="data" aria-pressed="false">📋 Manual Data Entry</button>
+        <button type="button" data-problem="reports" aria-pressed="false">📊 Reports</button>
+        <button type="button" data-problem="billing" aria-pressed="false">💰 Billing</button>
+        <button type="button" data-problem="other" aria-pressed="false">🤖 Something Else</button>
+      </div>
+      <div class="automate-result" aria-live="polite"></div>
     </section>
 
     <section class="why" id="why">
@@ -279,5 +296,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="interactive.js" defer></script>
 </body>
 </html>
