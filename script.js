@@ -571,7 +571,7 @@
       cats.append(b);
     });
     const more = el('p', 'ch-score');
-    more.innerHTML = 'Want more? <a href="https://arivinaa.com/quizzes" target="_blank" rel="noopener">Play full quizzes on Arivinaa</a>.';
+    more.innerHTML = 'Want more? <a href="https://arivinaa.com/quizzes" target="_blank" rel="noopener">Play full quizzes on AriVinaa</a>.';
     chBody.replaceChildren(intro, cats, ...(score.total ? [scoreLine()] : []), more);
   };
   const ask = cat => {
