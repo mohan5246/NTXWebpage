@@ -198,10 +198,10 @@
   };
 
   const ARIVINAA = {
-    quizzes: 'Timed ten-question quizzes across thirteen categories: general knowledge, science, programming, history, Tamil-language rounds and more. Your first attempt is the one that counts for the leaderboards.',
-    chess: 'Chess against Beginner, Intermediate and Pro bots, or a friend on your own clock, with voice across the board and room for visitors to watch.',
+    quizzes: 'Timed ten-question quizzes across thirteen categories, from general knowledge and science to programming, history and languages, including quizzes in Tamil. Your first attempt is the one that counts for the leaderboards.',
+    chess: 'Chess against Beginner, Intermediate and Pro bots, or a friend on your own clock, with voice across the board. Friends can ask to watch and listen.',
     guess: 'GUESS is multiplayer: five clues, fifteen seconds each. The first correct guess takes the round, and every clue makes it cheaper. Four to twelve players.',
-    games: 'Break The Bank, Pen Fight in real 3D, U Know and Quiz Party: quick party games for two to eight players, with learning guides that explain every rule.'
+    games: 'Break The Bank, Pen Fight in real 3D, U Know and Quiz Party: quick games to play alone or with friends, each with a guide that explains the rules.'
   };
   const ariList = $('.product-arivinaa [role="tablist"]');
   if (ariList) setupTabs(ariList, key => {
@@ -210,10 +210,10 @@
   });
 
   const PAVAI = {
-    consult: ['Consultations', "Doctors consult online from the same screen that holds the patient's history and notes, so nothing is retyped after the call."],
-    appts: ['Appointments', 'Patients book open slots themselves; the clinic sees the whole day, booked and open, at a glance.'],
-    patients: ['Patients', 'Every patient has one record with visit history, consultation notes and payments, searchable in seconds.'],
-    payments: ['Payments', 'Collect consultation fees by UPI, card or net banking and see what has been paid and what is still due.']
+    consult: ['Consultations', 'Online doctor consultations, with the administration around each consultation handled in the same system.'],
+    appts: ['Appointments', "Appointment management for the clinic: the day's bookings and open slots in one place."],
+    patients: ['Patients', 'Patient management for the clinic team, alongside appointments and consultations.'],
+    payments: ['Payments', 'Digital payment integration for consultation fees, so the clinic can see what has been paid.']
   };
   const pavList = $('.product-pavai [role="tablist"]');
   if (pavList) setupTabs(pavList, key => {
@@ -434,8 +434,8 @@
       const url = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`;
       const win = window.open(url, '_blank', 'noopener');
       if (!win) window.location.href = url;
-      doneTitle.textContent = 'Your message is ready.';
-      doneText.textContent = 'WhatsApp has opened with your enquiry filled in. Press send there and we will reply on WhatsApp.';
+      doneTitle.textContent = 'One more step: press Send in WhatsApp.';
+      doneText.textContent = 'We opened WhatsApp with your enquiry filled in. It reaches us only after you press Send there.';
       return showDone();
     }
 
@@ -465,7 +465,7 @@
       const json = await res.json().catch(() => ({}));
       if (!res.ok || String(json.success) !== 'true') throw new Error(json.message || String(res.status));
       doneTitle.textContent = 'Thank you. Your enquiry has been sent.';
-      doneText.textContent = `It has reached our inbox and we will reply to ${data.email}.`;
+      doneText.textContent = `We will reply to ${data.email}.`;
       showDone();
     } catch {
       setStatus('Sorry, the enquiry could not be sent just now. Please try again, or use the WhatsApp button.');
