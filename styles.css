@@ -202,6 +202,10 @@ figure { margin: 0; }
 .facts dd { margin: 2px 0 0; font-weight: 600; font-size: var(--s-body); }
 .about-text { grid-column: 4 / 9; display: grid; gap: 22px; align-content: start; }
 .statement { font-size: var(--s-lead); line-height: 1.35; }
+.founder { border-top: 3px solid var(--gold); padding-top: 18px; margin-top: 6px; display: grid; gap: 4px; }
+.founder-label { font-size: var(--s-small); color: var(--ink-soft); }
+.founder-name { font-stretch: 62%; font-weight: 800; text-transform: uppercase; font-size: clamp(2rem, 1.4rem + 2vw, 3rem); line-height: 1; letter-spacing: -0.01em; }
+.founder-meta { font-size: var(--s-body); line-height: 1.5; }
 .about-photo { grid-column: 9 / -1; align-self: start; }
 .about-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
 .about-photo figcaption { padding-left: 0; }
@@ -475,6 +479,11 @@ kbd { font-family: var(--text); font-size: 1rem; font-weight: 600; width: 2em; h
 .form-done-title { font-size: var(--s-lead); font-weight: 700; }
 .form-done .link-arrow { justify-self: start; color: var(--gold); }
 .enquiry.is-done .field, .enquiry.is-done .form-actions { display: none; }
+.enquiry.is-done .form-status { display: none; }
+.form-status { font-size: var(--s-small); color: #ff9b8f; }
+.form-status:empty { display: none; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.btn[disabled] { opacity: .7; cursor: progress; }
 
 .contact-direct { grid-column: 9 / -1; display: grid; gap: 22px; align-content: start; }
 .contact-big {

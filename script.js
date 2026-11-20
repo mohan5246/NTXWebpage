@@ -6,7 +6,6 @@
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const finePointer = window.matchMedia('(pointer: fine)').matches;
   const WHATSAPP = '919150243847';
-  const EMAIL = 'nithiyaatechnologies@gmail.com';
   const store = {
     get(k) { try { return sessionStorage.getItem(k); } catch { return null; } },
     set(k, v) { try { sessionStorage.setItem(k, v); } catch { /* private mode */ } }
@@ -402,39 +401,79 @@
     f.addEventListener('input', () => { if (f.closest('.is-invalid')) check(f); });
   });
 
+  const status = $('[data-form-status]', form);
+  const setStatus = msg => { status.textContent = msg; status.classList.toggle('is-shown', !!msg); };
+  let sending = false;
+
   form.addEventListener('submit', async e => {
     e.preventDefault();
-    const fields = $$('input, select, textarea', form);
+    if (sending) return;
+    setStatus('');
+    const via = e.submitter?.value || 'email';
+    const fields = $$('input:not(.hp), select, textarea', form);
     const bad = fields.filter(f => !check(f));
+    // An emailed enquiry needs an address to reply to.
+    const emailField = $('#f-email');
+    if (via === 'email' && !emailField.value.trim() && !bad.includes(emailField)) {
+      const wrap = emailField.closest('.field');
+      wrap.classList.add('is-invalid');
+      emailField.setAttribute('aria-invalid', 'true');
+      $('.error', wrap).textContent = 'Please add your email so we can reply. Or use the WhatsApp button.';
+      bad.push(emailField);
+      bad.sort((a, b) => fields.indexOf(a) - fields.indexOf(b));
+    }
     if (bad.length) { bad[0].focus(); return; }
+
     const data = Object.fromEntries(new FormData(form));
-    const via = e.submitter?.value || 'whatsapp';
     const from = data.org ? `${data.name} (${data.org})` : data.name;
-    const text = `Hello NTX, I'm ${from}.\nEnquiry: ${data.interest}\n\n${data.message.trim()}${data.email ? `\n\nEmail: ${data.email}` : ''}`;
+    const doneTitle = $('[data-done-title]', form);
     const doneText = $('[data-done-text]', form);
 
-    const endpoint = form.dataset.endpoint;
-    if (endpoint) {
-      // Optional: a form service (e.g. Formspree) can be set in data-endpoint.
-      try {
-        const res = await fetch(endpoint, { method: 'POST', headers: { Accept: 'application/json' }, body: new FormData(form) });
-        if (!res.ok) throw new Error(String(res.status));
-        doneText.textContent = 'Thank you. Your enquiry has reached us and we will reply soon.';
-        return showDone();
-      } catch { /* fall through to WhatsApp or email */ }
-    }
-
-    if (via === 'email') {
-      const subject = `Enquiry: ${data.interest} — ${data.name}`;
-      window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`;
-      doneText.textContent = 'Your email app has opened with the enquiry filled in. Press send there and we will reply by email.';
-    } else {
+    if (via === 'whatsapp') {
+      const text = `Hello NTX, I'm ${from}.\nEnquiry: ${data.interest}\n\n${data.message.trim()}${data.email ? `\n\nEmail: ${data.email}` : ''}`;
       const url = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`;
       const win = window.open(url, '_blank', 'noopener');
       if (!win) window.location.href = url;
+      doneTitle.textContent = 'Your message is ready.';
       doneText.textContent = 'WhatsApp has opened with your enquiry filled in. Press send there and we will reply on WhatsApp.';
+      return showDone();
     }
-    showDone();
+
+    // Send Enquiry: posted to FormSubmit (free, no account), which emails it to the address in data-endpoint.
+    const btn = e.submitter;
+    const label = btn ? btn.textContent : '';
+    sending = true;
+    form.classList.add('is-sending');
+    if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+    try {
+      const res = await fetch(form.dataset.endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          Name: data.name,
+          About: data.interest,
+          'Business or college': data.org || '-',
+          Email: data.email,
+          Message: data.message.trim(),
+          _subject: `New enquiry: ${data.interest} (${data.name})`,
+          _replyto: data.email,
+          _template: 'table',
+          _captcha: 'false',
+          _honey: data._honey || ''
+        })
+      });
+      const json = await res.json().catch(() => ({}));
+      if (!res.ok || String(json.success) !== 'true') throw new Error(json.message || String(res.status));
+      doneTitle.textContent = 'Thank you. Your enquiry has been sent.';
+      doneText.textContent = `It has reached our inbox and we will reply to ${data.email}.`;
+      showDone();
+    } catch {
+      setStatus('Sorry, the enquiry could not be sent just now. Please try again, or use the WhatsApp button.');
+    } finally {
+      sending = false;
+      form.classList.remove('is-sending');
+      if (btn) { btn.disabled = false; btn.textContent = label; }
+    }
   });
   function showDone() {
     form.classList.add('is-done');
@@ -445,6 +484,7 @@
     form.reset();
     $$('.field', form).forEach(f => f.classList.remove('is-invalid'));
     $$('.error', form).forEach(p => { p.textContent = ''; });
+    setStatus('');
     form.classList.remove('is-done');
     done.hidden = true;
     $('#f-name').focus();
