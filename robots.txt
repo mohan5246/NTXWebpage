@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /.taste-skill/
+Sitemap: https://www.nithiyaatechnologies.com/sitemap.xml

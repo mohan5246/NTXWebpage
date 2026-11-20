@@ -2,300 +2,546 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nithiyaa Technologies NTX (NTX) is a technology company proudly based in Puducherry, built by professionals with over a decade of industry experience — offering website development, mobile app development, custom software, FinTech solutions, IT consulting and technology training." />
-  <title>Nithiyaa Technologies NTX | Technology Beyond Limits</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nithiyaa Technologies (NTX) | Software, Apps &amp; AI from Puducherry</title>
+  <meta name="description" content="Nithiyaa Technologies (NTX) is a Puducherry technology studio that builds websites, mobile apps, custom software, FinTech and AI automation — and its own products, Arivinaa and PavAI." />
+  <link rel="canonical" href="https://www.nithiyaatechnologies.com/" />
+  <meta name="theme-color" content="#070F24" />
+  <meta name="color-scheme" content="dark light" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Nithiyaa Technologies NTX" />
+  <meta property="og:title" content="Nithiyaa Technologies (NTX) — Turning ideas into impact" />
+  <meta property="og:description" content="A Puducherry technology studio building websites, apps, custom software and AI automation — and its own products, Arivinaa and PavAI." />
+  <meta property="og:url" content="https://www.nithiyaatechnologies.com/" />
+  <meta property="og:image" content="https://www.nithiyaatechnologies.com/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Noto+Serif+Tamil:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="brand.css" />
-  <link rel="stylesheet" href="interactive.css" />
+
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Nithiyaa Technologies NTX",
+    "alternateName": "NTX",
+    "url": "https://www.nithiyaatechnologies.com/",
+    "logo": "https://www.nithiyaatechnologies.com/assets/icon-512.png",
+    "email": "nithiyaatechnologies@gmail.com",
+    "telephone": "+91-91502-43847",
+    "address": { "@type": "PostalAddress", "addressLocality": "Puducherry", "addressCountry": "IN" },
+    "slogan": "Technology Beyond Limits"
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Nithiyaa Technologies NTX home">
-      <img class="brand-logo" src="assets/ntx-logo.jpg" alt="Nithiyaa Technologies NTX" />
+  <!-- PavAI mark, defined once. Swap this symbol to change the product logo everywhere on the page. -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="pv-grad" x1="12" y1="8" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#5B21B6" /><stop offset="1" stop-color="#0E9F96" />
+      </linearGradient>
+      <symbol id="pavai-mark" viewBox="0 0 64 64">
+        <path fill="url(#pv-grad)" fill-rule="evenodd" d="M18 10H33C41.8 10 48.2 15.4 48.9 22.4L52.5 28.1C53 28.9 52.6 29.6 51.7 29.8L49.7 30.2C50.3 31.2 50.1 32.1 49.3 32.6C50 33.6 49.7 35 48.4 35.6C46.6 37.7 43.6 38.6 40 38.6H25.4V52A3 3 0 0 1 22.4 55H18A3 3 0 0 1 15 52V13A3 3 0 0 1 18 10ZM34.4 18.6V22.1H30.9V25.5H34.4V29H37.8V25.5H41.3V22.1H37.8V18.6Z" />
+        <path d="M25.4 45.5C32 45.5 36 50.5 42 50.5C47 50.5 50.8 47.6 51.6 44.4" fill="none" stroke="#0E9F96" stroke-width="2.6" stroke-linecap="round" />
+        <circle cx="51.9" cy="41.2" r="3" fill="none" stroke="#0E9F96" stroke-width="2.4" />
+        <path d="M40.6 10.2C40.4 5.6 44.6 2.4 50.6 2.6C50.6 7.6 46.6 10.8 40.6 10.2Z" fill="#14B8A6" />
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" /></symbol>
+      <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z" /></symbol>
+      <symbol id="i-web" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2" /></g></symbol>
+      <symbol id="i-mobile" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="2" width="12" height="20" rx="3" /><path d="M11 18h2" /></g></symbol>
+      <symbol id="i-custom" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h10M4 17h6M18 7h2M14 17h6" /><circle cx="16" cy="7" r="2" /><circle cx="12" cy="17" r="2" /></g></symbol>
+      <symbol id="i-fintech" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2" /><path d="M2 10h20M6 15h4" /></g></symbol>
+      <symbol id="i-ai" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3" /><rect x="7" y="7" width="10" height="10" rx="2" /><path d="M10 12h4" /></g></symbol>
+      <symbol id="i-consult" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18M5 20V9l7-5 7 5v11" /><path d="M10 20v-5h4v5" /></g></symbol>
+      <symbol id="i-learn" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5L2 9Z" /><path d="M6 11v5c3 2 9 2 12 0v-5" /></g></symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="Nithiyaa Technologies NTX — home">
+      <img src="assets/ntx-mark.webp" width="499" height="273" alt="" />
+      <span class="brand-name">Nithiyaa Technologies</span>
     </a>
-
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav aria-label="Main navigation">
-      <a class="active" href="#home">Home</a>
-      <a href="#solutions">Solutions</a>
-      <a href="#about">About us</a>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
       <a href="#training">Training</a>
-      <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+      <a class="nav-cta" href="#contact">Discuss a project</a>
     </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
   </header>
 
-  <main id="home">
+  <main id="main">
 
-    <section class="hero">
-      <div class="grid-glow"></div>
-      <div class="orb orb-one"></div>
-      <div class="orb orb-two"></div>
+    <!-- 1. Hero: Thirukkural 619 -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <figure class="kural" lang="ta">
+        <blockquote class="kural-lines">
+          <p class="kural-line" data-kural="1">தெய்வத்தான் ஆகா தெனினும் முயற்சிதன்</p>
+          <p class="kural-line" data-kural="2">மெய்வருத்தக் கூலி தரும்.</p>
+        </blockquote>
+        <span class="kural-rule" aria-hidden="true"></span>
+        <figcaption class="kural-cite">
+          <span>திருவள்ளுவர் · திருக்குறள் 619</span>
+          <span class="kural-meaning" lang="en">Even when fortune will not help, effort pays the wages of the labour it took.</span>
+        </figcaption>
+      </figure>
 
-      <div class="hero-content">
-        <p class="eyebrow"><span></span> NITHIYAA TECHNOLOGIES NTX</p>
-        <h1 aria-label="Turning ideas into impact.">Turning ideas<br />into <span>impact.</span></h1>
-        <p class="hero-intro">Innovative solutions for individuals, businesses and a smarter future.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#contact">Start a conversation <span>↗</span></a>
-          <a class="text-link" href="#solutions">Explore our work <span>↓</span></a>
+      <div class="hero-foot">
+        <div class="hero-copy">
+          <p class="hero-lead">We design and build practical digital solutions that help businesses grow, simplify operations and turn ambitious ideas into reality.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact" data-magnetic>Let's discuss your project</a>
+            <a class="link-arrow" href="#products">Explore our products</a>
+          </div>
         </div>
+        <h1 class="hero-title" id="hero-title">
+          <span class="line"><span>Turning ideas</span></span>
+          <span class="line"><span>into impact.</span></span>
+        </h1>
       </div>
+    </section>
 
-      <div class="hero-art" aria-hidden="true">
-        <div class="sphere">
-          <div class="sphere-ring ring-a"></div>
-          <div class="sphere-ring ring-b"></div>
-          <div class="sphere-core"></div>
+    <!-- 2. About -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <figure class="manuscript reveal">
+        <img src="assets/place/kural-manuscript.webp" width="1505" height="245" loading="lazy" alt="A palm-leaf manuscript page of the Tirukkural, Tamil script incised along the leaf" />
+        <figcaption>A 19th-century palm-leaf manuscript of the Tirukkuṟaḷ, with its first two couplets and commentary.</figcaption>
+      </figure>
+
+      <div class="about-grid">
+        <h2 class="section-title reveal" id="about-title">Born in Puducherry.</h2>
+        <dl class="facts reveal">
+          <div><dt>Based in</dt><dd>Puducherry, India</dd></div>
+          <div><dt>Experience</dt><dd>Over a decade, across software and digital delivery</dd></div>
+          <div><dt>Products live</dt><dd>Arivinaa and PavAI</dd></div>
+          <div><dt>Works with</dt><dd>Businesses, clinics, colleges and individuals</dd></div>
+        </dl>
+        <div class="about-text reveal">
+          <p class="statement">Built on experience. NTX is a new company run by people who are not new to the work. We have spent more than ten years building software for others; now we build it under our own name, for businesses that want technology to solve a real problem rather than add another one.</p>
+          <p>We do not only take briefs. We ship our own products, run them, and live with the decisions we made building them. That is the experience we bring to your project.</p>
         </div>
-        <div class="pixel-trail"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-        <p class="art-label">BUILDING<br />MOMENTUM</p>
-      </div>
-
-      <div class="hero-footer">
-        <span>SCROLL TO EXPLORE <b>↓</b></span>
-        <span>PEOPLE <i></i> TECHNOLOGY <i></i> POSSIBILITIES</span>
+        <figure class="about-photo reveal">
+          <img src="assets/place/promenade.webp" width="1600" height="1067" loading="lazy" alt="The rock beach along Puducherry's Promenade under a monsoon sky, with the old pier in the distance" />
+          <figcaption>The Promenade, Puducherry.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="brand-banner" aria-label="Nithiyaa Technologies brand banner">
-      <img src="assets/ntx-branding-banner.png" alt="Nithiyaa Technologies NTX — Turning Ideas into Impact" />
-    </section>
-
-    <section class="intro" id="about">
-      <p class="eyebrow dark"><span></span> ABOUT NITHIYAA TECHNOLOGIES</p>
-      <p class="locale-badge">PROUDLY FROM PUDUCHERRY</p>
-      <div class="intro-row">
-        <h2>Born in Puducherry.<br />Built on experience.<br /><em>Driven by possibilities.</em></h2>
-        <p>NTX is a new technology company built by professionals with over a decade of industry experience across software development, technology and digital solutions. We combine that experience with fresh thinking and practical technology to solve real-world problems — helping people work smarter, businesses grow, and opportunities become more accessible.</p>
+    <!-- 3. Products -->
+    <section class="products" id="products" aria-labelledby="products-title">
+      <div class="products-head">
+        <h2 class="section-title reveal" id="products-title">Products we built and run</h2>
+        <p class="reveal">Two live platforms, designed, engineered and operated by NTX. They are the clearest proof of how we work.</p>
       </div>
-      <p class="pull-note">NTX is new. Our experience isn't.</p>
-      <div class="metrics">
-        <div><strong>10<span>+</span></strong><p>Years of combined experience</p></div>
-        <div><strong>100<span>%</span></strong><p>Commitment to quality</p></div>
-        <div><strong>∞</strong><p>Possibilities ahead</p></div>
-      </div>
-    </section>
 
-    <section class="solutions" id="solutions">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow"><span></span> OUR SOLUTIONS</p>
-          <h2>Practical technology,<br /><em>built around you.</em></h2>
+      <!-- Arivinaa -->
+      <article class="product product-arivinaa" aria-labelledby="ari-title">
+        <div class="product-copy">
+          <h3 class="product-name reveal" id="ari-title">Arivinaa</h3>
+          <p class="product-tagline reveal">Knowledge meets entertainment.</p>
+          <p class="reveal">An interactive quiz and gaming platform that brings knowledge, competition and play together, in English and Tamil, on any screen.</p>
+
+          <div class="tabs reveal" role="tablist" aria-label="Arivinaa features">
+            <button role="tab" id="ari-tab-quizzes" aria-controls="ari-panel" aria-selected="true" data-tab="quizzes">Quizzes</button>
+            <button role="tab" id="ari-tab-chess" aria-controls="ari-panel" aria-selected="false" tabindex="-1" data-tab="chess">Chess</button>
+            <button role="tab" id="ari-tab-guess" aria-controls="ari-panel" aria-selected="false" tabindex="-1" data-tab="guess">Guess</button>
+            <button role="tab" id="ari-tab-games" aria-controls="ari-panel" aria-selected="false" tabindex="-1" data-tab="games">Games</button>
+          </div>
+          <p class="tab-text" id="ari-text" aria-live="polite">Timed ten-question quizzes across thirteen categories: general knowledge, science, programming, history, Tamil-language rounds and more. Your first attempt is the one that counts for the leaderboards.</p>
+
+          <ul class="feature-list reveal" aria-label="Implemented in Arivinaa">
+            <li>Interactive quizzes</li>
+            <li>Multiplayer Guess</li>
+            <li>Chess with Beginner, Intermediate and Pro bots</li>
+            <li>Break The Bank</li>
+            <li>Pen Fight</li>
+            <li>Competitive leaderboards</li>
+            <li>Learning guides</li>
+          </ul>
+          <a class="btn btn-ari" href="https://arivinaa.com" target="_blank" rel="noopener" data-magnetic>Explore Arivinaa <svg aria-hidden="true"><use href="#i-arrow" /></svg><span class="sr-only">(opens arivinaa.com in a new tab)</span></a>
         </div>
-        <a href="#contact" class="round-link" aria-label="Discuss your project">↗</a>
-      </div>
 
-      <div class="service-grid">
-        <article class="service featured">
-          <span class="number">01</span>
-          <div class="service-icon code">&lt;/&gt;</div>
-          <h3>Website<br />Development</h3>
-          <p>Business websites, corporate sites, landing pages and custom web platforms.</p>
-          <a href="#contact" aria-label="Discuss Website Development with NTX">Discover more <b>→</b></a>
-        </article>
-        <article class="service">
-          <span class="number">02</span>
-          <div class="service-icon">▣</div>
-          <h3>Mobile App<br />Development</h3>
-          <p>Android and mobile applications designed around real user needs.</p>
-          <a href="#contact" aria-label="Discuss Mobile App Development with NTX">Discover more <b>→</b></a>
-        </article>
-        <article class="service">
-          <span class="number">03</span>
-          <div class="service-icon">◈</div>
-          <h3>Custom Software<br />Solutions</h3>
-          <p>Business-specific software that simplifies workflows and improves productivity.</p>
-          <a href="#contact" aria-label="Discuss Custom Software Solutions with NTX">Discover more <b>→</b></a>
-        </article>
-        <article class="service">
-          <span class="number">04</span>
-          <div class="service-icon">₹</div>
-          <h3>FinTech<br />Solutions</h3>
-          <p>Technology for digital payments, business finance and financial workflows.</p>
-          <a href="#contact" aria-label="Discuss FinTech Solutions with NTX">Discover more <b>→</b></a>
-        </article>
-        <article class="service">
-          <span class="number">05</span>
-          <div class="service-icon">⌁</div>
-          <h3>IT<br />Consulting</h3>
-          <p>Technology guidance, architecture, planning and digital strategy.</p>
-          <a href="#contact" aria-label="Discuss IT Consulting with NTX">Discover more <b>→</b></a>
-        </article>
-        <article class="service">
-          <span class="number">06</span>
-          <div class="service-icon">↗</div>
-          <h3>Digital<br />Transformation</h3>
-          <p>Helping businesses modernize processes and adopt practical digital solutions.</p>
-          <a href="#contact" aria-label="Discuss Digital Transformation with NTX">Discover more <b>→</b></a>
-        </article>
-        <article class="service">
-          <span class="number">07</span>
-          <div class="service-icon">✎</div>
-          <h3>Technology<br />Training &amp; Classes</h3>
-          <p>Practical technology education for students, professionals and organizations.</p>
-          <a href="#training" aria-label="Learn more about Technology Training at NTX">Discover more <b>→</b></a>
-        </article>
-        <article class="service">
-          <span class="number">08</span>
-          <div class="service-icon">◎</div>
-          <h3>Mentoring &amp;<br />Career Guidance</h3>
-          <p>Helping learners understand technology careers, projects and industry skills.</p>
-          <a href="#training" aria-label="Learn more about Mentoring and Career Guidance at NTX">Discover more <b>→</b></a>
-        </article>
-      </div>
-    </section>
-
-    <section class="automate" id="automate">
-      <p class="eyebrow dark"><span></span> WHAT CAN NTX AUTOMATE?</p>
-      <h2>Pick a problem.<br /><em>See it automated.</em></h2>
-      <p class="automate-lead">Choose what slows your business down and see how NTX could solve it with an AI agent, automation and software.</p>
-      <div class="automate-options" role="group" aria-label="Choose a business problem">
-        <button type="button" data-problem="booking" aria-pressed="false">📅 Appointment Booking</button>
-        <button type="button" data-problem="calls" aria-pressed="false">📞 Customer Calls</button>
-        <button type="button" data-problem="support" aria-pressed="false">💬 Customer Support</button>
-        <button type="button" data-problem="data" aria-pressed="false">📋 Manual Data Entry</button>
-        <button type="button" data-problem="reports" aria-pressed="false">📊 Reports</button>
-        <button type="button" data-problem="billing" aria-pressed="false">💰 Billing</button>
-        <button type="button" data-problem="other" aria-pressed="false">🤖 Something Else</button>
-      </div>
-      <div class="automate-result" aria-live="polite"></div>
-    </section>
-
-    <section class="why" id="why">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow dark"><span></span> WHY NTX</p>
-          <h2>Why choose<br /><em>a new company?</em></h2>
+        <div class="product-stage reveal" role="tabpanel" id="ari-panel" aria-labelledby="ari-tab-quizzes">
+          <div class="browser" data-ui>
+            <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>arivinaa.com</span></div>
+            <div class="browser-view">
+              <img class="shot is-active" data-shot="quizzes" src="assets/products/arivinaa/quizzes.webp" width="1440" height="836" loading="lazy" alt="Arivinaa Explore page: a search bar with category and difficulty filters above quiz cards, including Tamil-language Deepavali quizzes" />
+              <img class="shot" data-shot="chess" src="assets/products/arivinaa/chess.webp" width="1140" height="470" loading="lazy" alt="Arivinaa games: the GUESS and Chess cards, with player counts and Play Now buttons" />
+              <img class="shot" data-shot="guess" src="assets/products/arivinaa/guess.webp" width="1440" height="696" loading="lazy" alt="Arivinaa home page: Play. Think. Compete. beside a live Try a round guess card worth 100 points" />
+              <img class="shot" data-shot="games" src="assets/products/arivinaa/games.webp" width="1140" height="822" loading="lazy" alt="Arivinaa games grid: Break The Bank, U Know, Pen Fight, Quiz Party and Solo Quiz" />
+            </div>
+          </div>
+          <div class="phone" data-ui>
+            <img src="assets/products/arivinaa/mobile.webp" width="390" height="844" loading="lazy" alt="Arivinaa on a phone, with the bottom navigation for Home, Games, Quizzes and Boards" />
+          </div>
         </div>
-      </div>
-      <div class="why-grid">
-        <article class="why-card">
-          <div class="why-icon">✦</div>
-          <h3>Experience that matters</h3>
-          <p>Backed by professionals with over a decade of industry experience.</p>
-        </article>
-        <article class="why-card">
-          <div class="why-icon">◆</div>
-          <h3>People first</h3>
-          <p>Technology should empower people, not replace human potential.</p>
-        </article>
-        <article class="why-card">
-          <div class="why-icon">▲</div>
-          <h3>Practical innovation</h3>
-          <p>We build solutions around real problems, not technology for technology's sake.</p>
-        </article>
-        <article class="why-card">
-          <div class="why-icon">⬡</div>
-          <h3>Client-centric</h3>
-          <p>We listen, understand and build around your actual needs.</p>
-        </article>
-        <article class="why-card">
-          <div class="why-icon">✚</div>
-          <h3>Quality &amp; reliability</h3>
-          <p>We aim for secure, scalable, maintainable and dependable solutions.</p>
-        </article>
-        <article class="why-card">
-          <div class="why-icon">●</div>
-          <h3>Continuous learning</h3>
-          <p>We keep learning, adapting and evolving with technology.</p>
-        </article>
-      </div>
-    </section>
+      </article>
 
-    <section class="story" id="story">
-      <div class="story-grid">
-        <div class="story-visual" aria-hidden="true">
-          <div class="postit">
-            <p class="postit-year">1968</p>
-            <p class="postit-note">Weak. Reusable.<br />Almost thrown away.</p>
+      <!-- PavAI -->
+      <article class="product product-pavai" aria-labelledby="pav-title">
+        <div class="product-copy">
+          <div class="pavai-lockup reveal">
+            <svg class="pavai-mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#pavai-mark" /></svg>
+            <div>
+              <h3 class="product-name pavai-word" id="pav-title"><span class="pav">Pav</span><span class="ai">AI</span></h3>
+              <p class="pavai-sub">by NTX · Online consultation &amp; clinic management</p>
+            </div>
+          </div>
+          <p class="product-tagline reveal">Care, connected.</p>
+          <p class="reveal">A digital healthcare platform that simplifies online consultations, appointment scheduling, patient records, digital payments and the everyday running of a clinic.</p>
+
+          <div class="tabs reveal" role="tablist" aria-label="PavAI features">
+            <button role="tab" id="pav-tab-consult" aria-controls="pav-panel" aria-selected="true" data-tab="consult">Consultations</button>
+            <button role="tab" id="pav-tab-appts" aria-controls="pav-panel" aria-selected="false" tabindex="-1" data-tab="appts">Appointments</button>
+            <button role="tab" id="pav-tab-patients" aria-controls="pav-panel" aria-selected="false" tabindex="-1" data-tab="patients">Patients</button>
+            <button role="tab" id="pav-tab-payments" aria-controls="pav-panel" aria-selected="false" tabindex="-1" data-tab="payments">Payments</button>
+          </div>
+          <p class="tab-text" id="pav-text" aria-live="polite">Doctors consult online from the same screen that holds the patient's history and notes, so nothing is retyped after the call.</p>
+
+          <ul class="feature-list reveal" aria-label="PavAI capabilities">
+            <li>Online doctor consultations</li>
+            <li>Appointment management</li>
+            <li>Patient management</li>
+            <li>Digital payment integration</li>
+            <li>Clinic workflow management</li>
+            <li>Consultation administration</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn-pav" href="#contact" data-enquire="PavAI — healthcare solution" data-magnetic>Discuss a healthcare solution</a>
+            <a class="link-arrow" href="#contact" data-enquire="PavAI — demo request">Request a demo</a>
           </div>
         </div>
 
-        <div class="story-content">
-          <p class="eyebrow dark"><span></span> A LITTLE STORY THAT INSPIRES US</p>
-          <h2>Sometimes, a “failure” is simply an idea<br /><em>waiting to be understood.</em></h2>
+        <div class="product-stage reveal" role="tabpanel" id="pav-panel" aria-labelledby="pav-tab-consult">
+          <div class="app" data-ui aria-label="PavAI dashboard preview with sample data">
+            <aside class="app-side" aria-hidden="true">
+              <svg class="app-logo" viewBox="0 0 64 64"><use href="#pavai-mark" /></svg>
+              <span class="app-nav is-on" data-nav="consult">Consultations</span>
+              <span class="app-nav" data-nav="appts">Appointments</span>
+              <span class="app-nav" data-nav="patients">Patients</span>
+              <span class="app-nav" data-nav="payments">Payments</span>
+            </aside>
+            <div class="app-main">
+              <div class="app-top"><strong data-app-title>Consultations</strong><span class="sample">Sample data</span></div>
 
-          <div class="story-copy">
-            <p>In 1968, a scientist at 3M was trying to create a very strong adhesive. Instead, he accidentally created one that was weak and reusable.</p>
-            <p>At first, it seemed like a failure.</p>
-            <p>For years, nobody knew what to do with it. Then another 3M employee had an idea: <em>what if this adhesive could hold a piece of paper without damaging the page?</em></p>
-            <p>That simple idea eventually became the Post-it Note — something now used around the world.</p>
+              <div class="view is-active" data-view="consult">
+                <div class="call">
+                  <div class="call-video"><span class="avatar lg">MR</span><span class="call-time">Live · 08:42</span><span class="avatar sm">DR</span></div>
+                  <div class="call-notes">
+                    <p class="k">Patient</p><p>Meena R., 34 · Follow-up</p>
+                    <p class="k">Reason</p><p>Review after 2 weeks of treatment</p>
+                    <p class="k">Notes</p><p>Improving. Continue current plan, review in 4 weeks.</p>
+                    <span class="chip-ok">Notes saved to record</span>
+                  </div>
+                </div>
+                <table class="ui-table"><thead><tr><th>Up next</th><th>Time</th><th>Type</th></tr></thead>
+                  <tbody><tr><td>Arun K.</td><td>11:15</td><td>Video</td></tr><tr><td>Divya S.</td><td>11:30</td><td>Video</td></tr><tr><td>Farook M.</td><td>11:45</td><td>In clinic</td></tr></tbody></table>
+              </div>
+
+              <div class="view" data-view="appts">
+                <div class="cal">
+                  <div class="cal-col"><p class="k">Today · 9 booked</p>
+                    <span class="slot">09:30 · Kavya P.</span><span class="slot">10:00 · Ravi T.</span><span class="slot free">10:30 · Open</span><span class="slot">10:45 · Meena R.</span><span class="slot">11:15 · Arun K.</span><span class="slot">11:30 · Divya S.</span><span class="slot">11:45 · Farook M.</span></div>
+                  <div class="cal-col"><p class="k">Afternoon</p>
+                    <span class="slot">16:00 · Lakshmi V.</span><span class="slot">16:30 · Hari N.</span><span class="slot free">17:00 · Open</span><span class="slot">17:30 · Sneha J.</span></div>
+                </div>
+                <p class="ui-note">Booked and open slots for the whole day, in one view.</p>
+              </div>
+
+              <div class="view" data-view="patients">
+                <table class="ui-table"><thead><tr><th>Patient</th><th>Last visit</th><th>Visits</th><th>Status</th></tr></thead>
+                  <tbody>
+                    <tr><td>Meena R.</td><td>Today</td><td>4</td><td><span class="chip-ok">Active</span></td></tr>
+                    <tr><td>Arun K.</td><td>12 Nov</td><td>2</td><td><span class="chip-ok">Active</span></td></tr>
+                    <tr><td>Divya S.</td><td>3 Nov</td><td>6</td><td><span class="chip-wait">Review due</span></td></tr>
+                    <tr><td>Farook M.</td><td>28 Oct</td><td>1</td><td><span class="chip-ok">Active</span></td></tr>
+                    <tr><td>Lakshmi V.</td><td>15 Oct</td><td>3</td><td><span class="chip-wait">Review due</span></td></tr>
+                  </tbody></table>
+                <p class="ui-note">Each record keeps visit history, consultation notes and payments together.</p>
+              </div>
+
+              <div class="view" data-view="payments">
+                <div class="pay-totals">
+                  <div><p class="k">Collected today</p><p class="big">₹3,000</p></div>
+                  <div><p class="k">Awaiting payment</p><p class="big">4 bookings</p></div>
+                </div>
+                <table class="ui-table"><thead><tr><th>Patient</th><th>Method</th><th class="num">Amount</th></tr></thead>
+                  <tbody><tr><td>Kavya P.</td><td>UPI</td><td class="num">₹600</td></tr><tr><td>Ravi T.</td><td>Card</td><td class="num">₹600</td></tr><tr><td>Meena R.</td><td>UPI</td><td class="num">₹600</td></tr><tr><td>Arun K.</td><td>UPI</td><td class="num">₹600</td></tr><tr><td>Lakshmi V.</td><td>Net banking</td><td class="num">₹600</td></tr></tbody></table>
+              </div>
+            </div>
           </div>
-
-          <blockquote class="pull-note">
-            <p>“Not every failure is a dead end. Sometimes, it is an idea waiting for the right person to see its potential.”</p>
-          </blockquote>
-
-          <p class="story-close">At NTX, we believe every idea deserves that chance.</p>
-
-          <p class="story-tagline">THINK <i></i> BUILD <i></i> LEARN <i></i> TRANSFORM</p>
         </div>
-      </div>
+      </article>
     </section>
 
-    <section class="training" id="training">
-      <div class="training-grid">
-        <div class="training-content">
-          <p class="eyebrow"><span></span> KNOWLEDGE SHARING</p>
-          <h2>Learn. Build.<br /><em>Grow.</em></h2>
-          <p>Technology becomes more powerful when knowledge is shared. Through practical classes, workshops and mentoring, NTX helps students and professionals build real-world technology skills, understand industry practices and turn learning into meaningful projects.</p>
-          <a class="text-link" href="#contact">Talk to us about training <span>↗</span></a>
-        </div>
-        <ul class="training-list" aria-label="NTX training offerings">
-          <li>Technology Classes</li>
-          <li>Practical Workshops</li>
-          <li>Project Guidance</li>
-          <li>Career Mentoring</li>
-          <li>Industry-Oriented Learning</li>
+    <!-- 4. Services -->
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="services-head">
+        <h2 class="section-title reveal" id="services-title">What we build for you</h2>
+        <p class="reveal">Seven ways we help. Type the problem you have, or pick a service to see what it solves.</p>
+      </div>
+      <div class="command">
+        <label class="sr-only" for="svc-search">Filter services by the problem you have</label>
+        <input id="svc-search" class="command-input" type="search" placeholder="Describe your problem…" autocomplete="off" />
+        <ul class="command-list" id="svc-list" aria-label="Services">
+          <li class="is-selected" data-svc="Website or web application" data-keys="website site web portal landing page ecommerce shop online booking seo"><button class="cmd-row" type="button" aria-expanded="false" aria-controls="svc-more-1"><svg class="cmd-icon" aria-hidden="true"><use href="#i-web" /></svg><span class="cmd-name">Websites &amp; web apps</span><kbd aria-hidden="true">W</kbd></button>
+            <div class="cmd-more" id="svc-more-1"><p>Your business is hard to find, or your site cannot take bookings, orders or payments. We build fast business websites, portals and web applications that do real work. <a class="link-arrow cmd-link" href="#contact" data-enquire="Website or web application">Enquire about web</a></p></div></li>
+          <li data-svc="Mobile application" data-keys="mobile app android ios phone play store customers"><button class="cmd-row" type="button" aria-expanded="false" aria-controls="svc-more-2"><svg class="cmd-icon" aria-hidden="true"><use href="#i-mobile" /></svg><span class="cmd-name">Mobile apps</span><kbd aria-hidden="true">M</kbd></button>
+            <div class="cmd-more" id="svc-more-2"><p>Your customers live on their phones but you are not there. We design and build Android and cross-platform apps around what your users actually need to do. <a class="link-arrow cmd-link" href="#contact" data-enquire="Mobile application">Enquire about an app</a></p></div></li>
+          <li data-svc="Custom software" data-keys="custom software excel spreadsheet erp crm inventory workflow internal tool manual"><button class="cmd-row" type="button" aria-expanded="false" aria-controls="svc-more-3"><svg class="cmd-icon" aria-hidden="true"><use href="#i-custom" /></svg><span class="cmd-name">Custom software</span><kbd aria-hidden="true">C</kbd></button>
+            <div class="cmd-more" id="svc-more-3"><p>Work runs on spreadsheets, paper and memory. We build the software your business is missing (inventory, CRM, internal tools) shaped to how you work. <a class="link-arrow cmd-link" href="#contact" data-enquire="Custom software">Enquire about software</a></p></div></li>
+          <li data-svc="FinTech solution" data-keys="fintech payment billing invoice upi gst finance loan accounts reconciliation"><button class="cmd-row" type="button" aria-expanded="false" aria-controls="svc-more-4"><svg class="cmd-icon" aria-hidden="true"><use href="#i-fintech" /></svg><span class="cmd-name">FinTech solutions</span><kbd aria-hidden="true">F</kbd></button>
+            <div class="cmd-more" id="svc-more-4"><p>Payments, invoices and reconciliation eat your team's week. We build payment flows, billing systems and financial workflows that are accurate and auditable. <a class="link-arrow cmd-link" href="#contact" data-enquire="FinTech solution">Enquire about FinTech</a></p></div></li>
+          <li data-svc="AI agents and workflow automation" data-keys="ai agent automation chatbot whatsapp calls support data entry reports repetitive"><button class="cmd-row" type="button" aria-expanded="false" aria-controls="svc-more-5"><svg class="cmd-icon" aria-hidden="true"><use href="#i-ai" /></svg><span class="cmd-name">AI agents &amp; automation</span><kbd aria-hidden="true">A</kbd></button>
+            <div class="cmd-more" id="svc-more-5"><p>Your team repeats the same answers and the same data entry every day. We build AI agents and automations that take that work off their hands, with a person always in charge. <a class="link-arrow cmd-link" href="#contact" data-enquire="AI agents and workflow automation">Enquire about automation</a></p></div></li>
+          <li data-svc="IT consulting and digital transformation" data-keys="consulting advice architecture cloud strategy modernise digital transformation plan audit"><button class="cmd-row" type="button" aria-expanded="false" aria-controls="svc-more-6"><svg class="cmd-icon" aria-hidden="true"><use href="#i-consult" /></svg><span class="cmd-name">IT consulting</span><kbd aria-hidden="true">I</kbd></button>
+            <div class="cmd-more" id="svc-more-6"><p>You know something must change but not what to build first. We review your systems, plan the architecture and guide a digital transformation one sensible step at a time. <a class="link-arrow cmd-link" href="#contact" data-enquire="IT consulting and digital transformation">Enquire about consulting</a></p></div></li>
+          <li data-svc="Technology training and mentoring" data-keys="training class course workshop mentor career student college learn skills"><button class="cmd-row" type="button" aria-expanded="false" aria-controls="svc-more-7"><svg class="cmd-icon" aria-hidden="true"><use href="#i-learn" /></svg><span class="cmd-name">Training &amp; mentoring</span><kbd aria-hidden="true">T</kbd></button>
+            <div class="cmd-more" id="svc-more-7"><p>Graduates and teams need skills the syllabus does not teach. We run practical classes, workshops and mentoring built on real projects. <a class="link-arrow cmd-link" href="#contact" data-enquire="Technology training and mentoring">Enquire about training</a></p></div></li>
         </ul>
+        <p class="command-empty" hidden>Nothing matches that yet. <a href="#contact" data-enquire="Something else">tell us about it</a> and we will say honestly whether we can help.</p>
+      </div>
+
+      <div class="automate" aria-labelledby="automate-title">
+        <h3 class="automate-title reveal" id="automate-title">Pick a problem. See it automated.</h3>
+        <div class="chips reveal" role="group" aria-label="Choose a business problem">
+          <button type="button" aria-pressed="true" data-problem="booking">Appointment booking</button>
+          <button type="button" aria-pressed="false" data-problem="calls">Customer calls</button>
+          <button type="button" aria-pressed="false" data-problem="support">Customer support</button>
+          <button type="button" aria-pressed="false" data-problem="data">Manual data entry</button>
+          <button type="button" aria-pressed="false" data-problem="reports">Reports</button>
+          <button type="button" aria-pressed="false" data-problem="billing">Billing</button>
+        </div>
+        <ol class="flow" aria-live="polite">
+          <li><span class="flow-k">AI agent</span><span data-flow="agent">An AI assistant answers enquiries and books slots around the clock.</span></li>
+          <li><span class="flow-k">Automation</span><span data-flow="automation">Confirmations, reminders and reschedules go out automatically.</span></li>
+          <li><span class="flow-k">Software</span><span data-flow="software">A booking dashboard with calendar, payments and customer history.</span></li>
+        </ol>
+        <a class="link-arrow" href="#contact" data-enquire="AI agents and workflow automation" data-flow-cta>Ask about automating this</a>
       </div>
     </section>
 
-    <section class="statement">
-      <div class="statement-line"></div>
-      <p class="eyebrow"><span></span> OUR PHILOSOPHY</p>
-      <h2>Maximum human.<br /><em>Minimum machine.</em></h2>
-      <p class="statement-lead">We believe technology should amplify human potential, not diminish it. The best solutions are those that help people think better, work smarter and achieve more.</p>
-      <p class="signature">NITHIYAA TECHNOLOGIES NTX</p>
+    <!-- 5. Why NTX -->
+    <section class="why" id="why" aria-labelledby="why-title">
+      <h2 class="section-title reveal" id="why-title">Why work with NTX</h2>
+      <p class="principles reveal">We work by
+        <button type="button" class="principle is-lit" data-p="0">practical engineering</button>,
+        <button type="button" class="principle" data-p="1">ownership and accountability</button>,
+        <button type="button" class="principle" data-p="2">client-focused delivery</button>,
+        <button type="button" class="principle" data-p="3">reliable solutions</button>,
+        <button type="button" class="principle" data-p="4">scalable architecture</button> and
+        <button type="button" class="principle" data-p="5">continuous improvement</button>.
+      </p>
+      <p class="principle-text" aria-live="polite" data-principle-text>We start from the problem in front of you and build the simplest thing that solves it well, not technology for its own sake.</p>
+
+      <div class="story">
+        <div class="story-copy">
+          <h3 class="story-title reveal">The note almost thrown away</h3>
+          <p class="reveal">In 1968 a scientist at 3M set out to make a very strong adhesive and made a weak, reusable one instead. For years nobody knew what it was for. Then a colleague wanted a bookmark that would stay put without damaging the page. The Post-it Note was born.</p>
+          <blockquote class="reveal"><p>Not every failure is a dead end. Sometimes it is an idea waiting for the right person to see what it could be.</p></blockquote>
+          <p class="reveal">At NTX, we believe every idea deserves that chance.</p>
+        </div>
+        <div class="postit reveal" aria-hidden="true">
+          <p class="postit-year">1968</p>
+          <p>Weak. Reusable. Almost thrown away.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div>
-        <p class="eyebrow dark"><span></span> LET'S TALK</p>
-        <h2>Have an idea? Let's turn it<br /><em>into impact.</em></h2>
-        <p class="contact-lead">Whether you need a website, mobile application, custom software, FinTech solution, technology consultation or practical training, let's build something meaningful together.</p>
-        <p class="contact-brand">A smarter tomorrow, together.</p>
+    <!-- 6. Process -->
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="process-copy">
+        <h2 class="section-title reveal" id="process-title">How we work</h2>
+        <p class="reveal">Four stages, each ending with something you can hold. The Kural calls the reward of effort its <span lang="ta">கூலி</span> — its wage. This is the slip for ours.</p>
+        <a class="btn btn-light" href="#contact" data-magnetic>Start with a conversation</a>
       </div>
-      <div class="contact-actions">
-        <a class="button button-primary" href="tel:+919150243847">Let's talk <span>↗</span></a>
-        <a class="text-link dark" href="#solutions">Explore our solutions <span>↓</span></a>
+      <div class="slip" data-slip>
+        <span class="slip-progress" aria-hidden="true"><span></span></span>
+        <ol class="slip-stages">
+          <li class="stage" data-stage>
+            <h3>Understand</h3>
+            <p class="row"><span>We learn how the work is done today</span><i></i><b>Problem brief</b></p>
+            <p class="row"><span>We agree what success looks like</span><i></i><b>Written scope</b></p>
+          </li>
+          <li class="stage" data-stage>
+            <h3>Design</h3>
+            <p class="row"><span>Screens and flows you can click through</span><i></i><b>Prototype</b></p>
+            <p class="row"><span>Architecture and data, planned to grow</span><i></i><b>Tech plan</b></p>
+          </li>
+          <li class="stage" data-stage>
+            <h3>Build</h3>
+            <p class="row"><span>Short cycles, shown to you as they land</span><i></i><b>Working builds</b></p>
+            <p class="row"><span>Tested on real devices and real data</span><i></i><b>Test record</b></p>
+          </li>
+          <li class="stage" data-stage>
+            <h3>Deliver</h3>
+            <p class="row"><span>Launch, and training for your team</span><i></i><b>Live product</b></p>
+            <p class="row"><span>Support and improvement after launch</span><i></i><b>Ongoing</b></p>
+          </li>
+        </ol>
+        <p class="slip-total"><span>Your wage for the effort</span><b>Software you own</b></p>
       </div>
     </section>
 
+    <!-- 7. Training -->
+    <section class="training" id="training" aria-labelledby="training-title">
+      <figure class="training-photo reveal">
+        <img src="assets/place/white-town.webp" width="1600" height="1067" loading="lazy" alt="A tree-shaded street in Puducherry's White Town, with parked cars and colonial-era buildings" />
+        <figcaption>White Town, Puducherry.</figcaption>
+      </figure>
+      <div class="training-copy">
+        <h2 class="section-title reveal" id="training-title">Learn by building</h2>
+        <p class="reveal">Technology grows when knowledge is shared. Our classes, workshops and mentoring are taught by people who ship software, around projects you finish and keep.</p>
+        <ul class="rows reveal" aria-label="Training offerings">
+          <li><span>Technology classes</span><small>Students</small></li>
+          <li><span>Practical workshops</span><small>Colleges and teams</small></li>
+          <li><span>Project guidance</span><small>Final-year students</small></li>
+          <li><span>Career mentoring</span><small>Freshers and career changers</small></li>
+          <li><span>Industry-oriented learning</span><small>Working professionals</small></li>
+        </ul>
+        <div class="btn-row reveal">
+          <a class="btn btn-primary" href="#contact" data-enquire="Technology training and mentoring">Ask about training</a>
+          <button class="link-arrow" type="button" data-open="challenge">Take a 60-second challenge</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Enquiry -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-head">
+        <h2 class="section-title reveal" id="contact-title">Let's discuss your project</h2>
+        <p class="reveal">Tell us what you need. Your message opens in WhatsApp or your email app, ready to send. Nothing is stored on this site.</p>
+      </div>
+
+      <form class="enquiry" id="enquiry" novalidate data-endpoint="">
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Full name" required aria-describedby="e-name" />
+          <p class="error" id="e-name"></p>
+        </div>
+        <div class="field">
+          <label for="f-interest">What is it about?</label>
+          <select id="f-interest" name="interest" required aria-describedby="e-interest">
+            <option value="">Choose one</option>
+            <optgroup label="Services">
+              <option>Website or web application</option>
+              <option>Mobile application</option>
+              <option>Custom software</option>
+              <option>FinTech solution</option>
+              <option>AI agents and workflow automation</option>
+              <option>IT consulting and digital transformation</option>
+              <option>Technology training and mentoring</option>
+            </optgroup>
+            <optgroup label="Products">
+              <option>PavAI — healthcare solution</option>
+              <option>PavAI — demo request</option>
+              <option>Arivinaa — partnership or feedback</option>
+            </optgroup>
+            <option>Something else</option>
+          </select>
+          <p class="error" id="e-interest"></p>
+        </div>
+        <div class="field">
+          <label for="f-org">Business or college <span class="opt">(optional)</span></label>
+          <input id="f-org" name="org" type="text" autocomplete="organization" placeholder="Business, clinic or college" />
+        </div>
+        <div class="field">
+          <label for="f-email">Email <span class="opt">(optional, if you prefer email)</span></label>
+          <input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" aria-describedby="e-email" />
+          <p class="error" id="e-email"></p>
+        </div>
+        <div class="field field-wide">
+          <label for="f-msg">Your idea or problem</label>
+          <textarea id="f-msg" name="message" rows="4" required minlength="10" placeholder="What would you like to build, fix or automate?" aria-describedby="e-msg h-msg"></textarea>
+          <p class="hint" id="h-msg">A few sentences is plenty. At least 10 characters.</p>
+          <p class="error" id="e-msg"></p>
+        </div>
+        <div class="form-actions field-wide">
+          <button class="btn btn-primary" type="submit" name="via" value="whatsapp" data-magnetic><svg aria-hidden="true"><use href="#i-wa" /></svg> Send on WhatsApp</button>
+          <button class="btn btn-ghost" type="submit" name="via" value="email">Send by email</button>
+        </div>
+        <div class="form-done field-wide" role="status" tabindex="-1" hidden>
+          <p class="form-done-title">Your message is ready.</p>
+          <p data-done-text>WhatsApp has opened with your enquiry filled in. Press send there and we will reply on WhatsApp.</p>
+          <button class="link-arrow" type="button" data-form-reset>Write another enquiry</button>
+        </div>
+      </form>
+
+      <div class="contact-direct">
+        <a class="contact-big" href="https://wa.me/919150243847?text=Hello%20NTX%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener"><span class="sr-only">WhatsApp</span>+91 91502 43847</a>
+        <div class="contact-meta">
+          <a href="mailto:nithiyaatechnologies@gmail.com?subject=Project%20enquiry">nithiyaatechnologies@gmail.com</a>
+          <a href="tel:+919150243847">Call 91502 43847</a>
+          <span>Puducherry, India</span>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <div class="footer-brand">
-      <img class="brand-logo" src="assets/ntx-logo.jpg" alt="Nithiyaa Technologies NTX" />
+  <!-- 9. Footer -->
+  <footer class="site-footer">
+    <p class="footer-together reveal">Let's build what's next, together.</p>
+    <p class="footer-name" aria-label="Nithiyaa Technologies">Nithiyaa Technologies</p>
+    <div class="footer-grid">
+      <ul class="footer-reach">
+        <li><a href="https://wa.me/919150243847" target="_blank" rel="noopener">WhatsApp +91 91502 43847</a></li>
+        <li><a href="mailto:nithiyaatechnologies@gmail.com">nithiyaatechnologies@gmail.com</a></li>
+        <li>Puducherry, India</li>
+      </ul>
+      <nav class="footer-links" aria-label="Footer">
+        <ul><li class="fl-k">Products</li><li><a href="https://arivinaa.com" target="_blank" rel="noopener">Arivinaa</a></li><li><a href="#products">PavAI</a></li></ul>
+        <ul><li class="fl-k">Company</li><li><a href="#about">About</a></li><li><a href="#why">Why NTX</a></li><li><a href="#process">Process</a></li></ul>
+        <ul><li class="fl-k">Work with us</li><li><a href="#services">Services</a></li><li><a href="#training">Training</a></li><li><a href="#contact">Enquiry</a></li></ul>
+      </nav>
     </div>
-    <p>Puducherry, India</p>
-    <a href="tel:+919150243847">91502 43847</a>
-    <a href="mailto:nithiyaatechnologies@gmail.com">nithiyaatechnologies@gmail.com</a>
-    <p>© 2026 NTX. All rights reserved.</p>
+    <p class="credits">Pictures: “Tirukkural manuscript”, public domain, via <a href="https://commons.wikimedia.org/wiki/File:Tirukkural_manuscript.jpg" rel="noopener">Wikimedia Commons</a> · “Pondicherry, Promenade Beach, Rock Beach, India” by Vyacheslav Argenberg, <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>, via <a href="https://commons.wikimedia.org/w/index.php?curid=122727325" rel="noopener">Wikimedia Commons</a> · “Streets of White town, Puducherry” by iMahesh, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener">CC BY-SA 4.0</a>, via <a href="https://commons.wikimedia.org/w/index.php?curid=174277085" rel="noopener">Wikimedia Commons</a>. Arivinaa screenshots © NTX. PavAI previews use sample data.</p>
+    <div class="footer-legal">
+      <p>© 2026 Nithiyaa Technologies NTX · Technology beyond limits</p>
+      <a href="#top">Back to top</a>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
-  <script src="interactive.js" defer></script>
+  <!-- Floating contact -->
+  <div class="dock">
+    <button class="dock-btn" type="button" data-open="answers">Quick answers</button>
+    <a class="dock-wa" href="https://wa.me/919150243847?text=Hello%20NTX%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat with NTX on WhatsApp"><svg aria-hidden="true"><use href="#i-wa" /></svg></a>
+  </div>
+
+  <div class="panel" id="panel-answers" role="dialog" aria-modal="false" aria-labelledby="answers-title" hidden>
+    <div class="panel-head"><h2 id="answers-title">Quick answers</h2><button class="panel-close" type="button" data-close aria-label="Close quick answers">Close</button></div>
+    <div class="panel-body">
+      <details><summary>How much does a project cost?</summary><p>It depends on scope. Share what you need and we will suggest a practical approach and a written estimate before any work starts.</p></details>
+      <details><summary>Can you build an appointment booking system?</summary><p>Yes. Online booking, payments and a dashboard. PavAI already does this for clinics, and we can build the same for other businesses.</p></details>
+      <details><summary>Do you build AI agents?</summary><p>Yes: assistants for customer questions, enquiry capture, data extraction and reports, always with a person able to step in.</p></details>
+      <details><summary>Do you work with businesses outside Puducherry?</summary><p>Yes. We work remotely with clients anywhere, and meet in person around Puducherry.</p></details>
+      <details><summary>Do you offer training for students?</summary><p>Yes: classes, workshops, project guidance and career mentoring for students and professionals.</p></details>
+      <details><summary>Who owns the code?</summary><p>For client projects, you do. We hand over the source and documentation at delivery.</p></details>
+      <a class="btn btn-primary btn-block" href="https://wa.me/919150243847?text=Hello%20NTX%2C%20I%20have%20a%20question." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa" /></svg> Ask us on WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-challenge" role="dialog" aria-modal="false" aria-labelledby="challenge-title" hidden>
+    <div class="panel-head"><h2 id="challenge-title">Challenge NTX</h2><button class="panel-close" type="button" data-close aria-label="Close challenge">Close</button></div>
+    <div class="panel-body" data-challenge></div>
+  </div>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
